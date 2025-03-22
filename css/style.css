@@ -1689,8 +1689,15 @@ h2,
     padding-bottom: 54px;
   }
 }
-.why__item:nth-child(2) .item-why__body, .why__item:nth-child(5) .item-why__body {
-  order: 2;
+@media (min-width: 767.98px) {
+  .why__item:nth-child(2) .item-why__body, .why__item:nth-child(5) .item-why__body {
+    order: 2;
+  }
+}
+@media (min-width: 1279.98px) {
+  .why__item:nth-child(2) .item-why__body, .why__item:nth-child(5) .item-why__body {
+    order: unset;
+  }
 }
 
 .item-why {

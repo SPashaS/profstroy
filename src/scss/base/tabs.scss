@@ -1,0 +1,31 @@
+.tabs {
+	// .tabs__navigation
+	&__navigation {
+		display: flex;
+	}
+	// .tabs__title
+	&__title {
+		border: 1px solid #DADADA;
+		color: #DADADA;
+		padding: 10px;
+		text-transform: uppercase;
+		letter-spacing: 0.64px;
+		font-size: 1.2rem;
+
+		@media (min-width:$mobile){
+			padding: 20px;
+			font-size: 1.4rem;
+		}
+
+		&._tab-active {
+			color: var(--main-color-text);
+			border: 1px solid #ffffff;
+		}
+	}
+	// .tabs__content
+	&__content {
+	}
+	// .tabs__body
+	&__body {
+	}
+}

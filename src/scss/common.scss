@@ -1,0 +1,188 @@
+// Заголовки, общие БЄМ блоки и проче...
+
+//====================================================================================================
+// h1,
+// h2 {
+//   font-size: 3.2rem;
+//   line-height: 1.2;
+//   font-weight: 700;
+//   text-align: center;
+
+//   @media (min-width:$mobile) {
+//     font-size: 4.6rem;
+//   }
+
+// }
+
+h1,
+.h1 {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.27;
+  letter-spacing: -0.06em;
+
+  @media (min-width:$mobile) {
+    font-size: 4.8rem;
+    line-height: 104%;
+    letter-spacing: -0.03em;
+  }
+
+  @media (min-width:$pc) {
+    font-size: 8rem;
+  }
+}
+
+
+h2,
+.h2 {
+
+  font-size: 2rem;
+  line-height: 1.25;
+  font-weight: 600;
+  letter-spacing: -0.06em;
+
+  @media (min-width:$mobile) {
+    font-size: 3.6rem;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+  }
+
+  @media (min-width:$pc) {
+    font-size: 4.8rem;
+    line-height: 1.04;
+    letter-spacing: -0.03em;
+  }
+}
+
+.text {
+  &>*:not(:last-child) {
+    margin-bottom: 10px;
+
+    @media (min-width:$mobile) {
+      margin-bottom: 16px;
+    }
+  }
+
+  ul {
+    li {
+      text-indent: 25px;
+
+      &::before {
+        content: '- ';
+      }
+    }
+  }
+}
+
+.contacts {
+
+  display: flex;
+  gap: 15px;
+
+  // .contacts__item-link
+  &__item-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  // .contacts__item-svg
+  &__item-svg {
+    height: 15px;
+
+    @media (min-width:$mobile) {
+      height: 18px;
+    }
+  }
+
+
+  // .contacts__item-text
+  &__item-text {
+    display: none;
+
+    @media (min-width:$mobile) {
+      display: inline;
+      font-weight: 400;
+      font-size: 1.6rem;
+    }
+  }
+
+
+}
+
+
+
+//====================================================================================================
+// .slider-nav {
+//   display: flex;
+//   justify-content: center;
+//   gap: 6px;
+//   position: relative;
+//   padding-top: 20px;
+
+//   @media (min-width:$mobile) {
+//     gap: 10px;
+//   }
+
+//   // .slider-nav__btn
+//   &__btn {
+//     width: 33px;
+//     height: 33px;
+//     border: 1px solid var(--accent-color);
+//     border-radius: 100%;
+//     position: relative;
+//     z-index: 2;
+//     transition: all 0.3s ease 0s;
+
+//     @media (min-width:$mobile) {
+//       width: 57px;
+//       height: 57px;
+//     }
+
+//     &::before {
+//       @extend %ic;
+//       content: "\e901";
+//       color: var(--accent-color);
+//       font-size: 15px;
+
+//       @media (min-width:$mobile) {
+//         content: "\e900";
+//         font-size: 20px;
+//       }
+//     }
+
+//     @media (hover: hover) {
+//       &:hover {
+//         border: 1px solid #659aff;
+
+//         &::before {
+//           color: #659aff;
+//         }
+//       }
+//     }
+//   }
+
+//   // .slider-nav__btn--prev
+//   &__btn--prev {
+//     transform: rotate(180deg);
+//   }
+
+//   // .slider-nav__btn--next
+//   &__btn--next {}
+
+
+// }
+
+
+
+//====================================================================================================
+
+//====================================================================================================
+
+//====================================================================================================
+
+//====================================================================================================
+
+//====================================================================================================
+
+//====================================================================================================

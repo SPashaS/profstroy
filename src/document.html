@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Профстрой - Документ центр"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			<article class="page__document document">
+				<div class="document__container">
+					<div class="document__header">
+						<h1 class="document__title">Fast. <span>Профстрой.</span> Professional.</h1>
+						<div class="document__text">Наша организация — ваш надежный партнер в области инженерных решений для систем
+							безопасности, защиты от чрезвычайных ситуаций и диспетчеризации. Доверьтесь профессионалам и получите
+							надежные и эффективные решения для вашей безопасности!</div>
+					</div>
+					<div class="document__row">
+						<div class="document__column">
+							<h2 class="document__column-title">Лицензия МЧС</h2>
+							<div class="document__column-text">
+								Лицензия МЧС является обязательным документом для компаний, занимающихся профессиональными инженерными
+								решениями в области систем безопасности, защиты населения от чрезвычайных ситуаций (ЧС) и
+								диспетчеризации.
+								Этот документ подтверждает, что организация обладает необходимыми знаниями, опытом и ресурсами для
+								выполнения работ в соответствии с требованиями законодательства и стандартов безопасности.
+
+							</div>
+							<a href="#" class="document__column-link">Ознакомиться с информацией</a>
+						</div>
+						<div class="document__img-ibg">
+							<img src="@img/document/1.jpg" alt="">
+						</div>
+
+					</div>
+					<div class="document__card card-document">
+						<div class="card-document__body">
+							<div class="card-document__title h1">Карточка организации</div>
+							<a href="#" class="card-document__link">Изучить подробнее</a>
+
+						</div>
+						<div class="card-document__img-ibg">
+							<img src="@img/document/2.jpg" alt="">
+						</div>
+					</div>
+				</div>
+			</article>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+//<QUANTITY>
+// Снипет (HTML): qa
+.quantity {
+	width: 88px;
+	// height: 40px;
+	display: flex;
+	// border: 1px solid rgba(166, 166, 166, 0.45);
+	background: #fff;
+	border-radius: 20px;
+	overflow: hidden;
+
+	@media (min-width:$mobileS){
+		width: 116px;
+	}
+	// .quantity__button
+	&__button {
+		border: 0.78px solid #9e9cb3;
+		border-radius: 16px;
+		flex: 0 0 28px;
+		height: 28px;
+		color: #9e9cb3;
+		transition: all 0.3s ease 0s;
+
+		@media (min-width:$mobileS){
+			flex: 0 0 36px;
+			height: 36px;
+			border-radius: 20px;
+		}
+
+		@media (hover: hover) {
+			&:hover {
+				border: 0.78px solid var(--accent-color);
+				color: var(--accent-color);
+			}
+		}
+
+		&:active {
+			border: 0.78px solid var(--accent-color);
+			color: var(--accent-color);
+		}
+		// flex: 0 0 30px;
+		// position: relative;
+		// cursor: pointer;
+		// &::before,
+		// &::after {
+		// 	content: "";
+		// 	position: absolute;
+		// 	top: 50%;
+		// 	left: 50%;
+		// 	transition: all 0.3s ease 0s;
+		// 	margin: 0px 0px 0px -4.5px;
+		// 	background-color: #a6a6a6;
+		// 	width: 9px;
+		// 	height: 1px;
+		// }
+		// @media (any-hover: hover) {
+		// 	&:hover {
+		// 		&::before,
+		// 		&::after {
+		// 			background-color: rgba(0, 0, 0, 0.5);
+		// 		}
+		// 	}
+		// }
+		// // .quantity__button_plus
+		// &_plus {
+		// 	&::before {
+		// 		transform: rotate(-90deg);
+		// 	}
+		// }
+		// // .quantity__button_minus
+		// &_minus {
+		// }
+
+	}
+	// .quantity__input
+	&__input {
+		flex: 1 1 auto;
+
+		input {
+			height: 100%;
+			color: #000000;
+			width: 100%;
+			text-align: center;
+			outline: none;
+			
+			@media (min-width:$mobileS){
+
+			}
+		}
+	}
+}

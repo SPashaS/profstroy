@@ -1,0 +1,36 @@
+//<BUTTONS (a.btn+tab)>
+// Снипет (HTML): btn
+
+.btn {
+	font-family: $fontFamily;
+	font-weight: 600;
+	font-size: 1.8rem;
+	text-align: center;
+
+	padding: 7.5px 24px;
+	background: var(--accent-color);
+	color: #fff;
+	cursor: pointer;
+
+	display: inline-block;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.3s ease 0s;
+
+	//ios
+	// border-radius: 80px;
+	// -webkit-appearance: none;
+	// -webkit-border-radius: 80px;
+	// outline: 0;
+
+	padding: 12px 40px;
+
+	@media (hover: hover) {
+		&:hover {
+			background: #2571ff;
+			color: #fbf9f4;
+			box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.17);
+		}
+	}
+
+}
